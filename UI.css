@@ -1,0 +1,198 @@
+*{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+	background-image: url("/images/luke-jernejcic-Oi31uKsnM1Q-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.title h1 {
+	background-color: rgb(77, 204, 226);
+	border-radius: 5%;
+	padding: 5px;
+}
+h1 {
+	text-align: center;
+}
+.table-container {
+	display:flex;
+	
+}
+.table-container button{
+	margin: 3px;
+    padding: 10px;
+    background-color: rgb(64, 144, 224);
+    border-radius: 5%;
+    border: 1px solid black;
+}
+.table-container button:hover {
+    background-color: rgb(179, 219, 255);
+}
+.table {
+	font-size: 10px;
+	height: 30px;
+	max-height: 30px;
+}
+.scores {
+	position: absolute;
+	background-color: rgb(91, 178, 255);
+	border-radius: 5%;
+	padding: 5px;
+	width: 200px;
+}
+.game-board {
+    width: 300px;
+    max-width: 300px;
+    height: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    background-color: rgba(255, 217, 0, 0.555);
+	padding-top: 0;
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+table {
+	width: 425px;
+	display:grid;
+}
+.games-functions {
+	display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.restart-game {
+	padding: 5px;
+	background-color: rgb(64, 144, 224);
+	border-radius: 5%;
+	margin: 10px;
+	font-size: 20px;
+    border:none;
+}
+.restart-game:hover {
+    background-color: rgb(179, 219, 255);
+}
+.theader {
+	display: flex;
+	/* background-color: rgb(77, 204, 226); */
+	border-radius: 3%;
+	justify-content: space-evenly;
+	/* margin: 30px; */
+}
+td {
+	background-color: rgb(196, 196, 196);
+	font-size: smaller;
+	width: 19px;
+	height: 19px;
+	max-width: 19px;
+	max-height: 19px;
+	text-align: center;
+	border-radius: 10%;
+	font-size: 10px;
+}
+td:hover {
+    background-color: rgb(90, 253, 8);
+}
+.cell {
+	display: none;
+}
+.mine {
+	display: none;
+}
+.timer {
+	margin: 10px;
+	width: 80px;
+	max-width: 80px;
+	max-height: 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: 5%;
+	background-color: rgb(64, 144, 224);
+}
+.timer span {
+	font-size: 10px;
+	padding: 10px;
+	border-radius: 5%;
+}
+.marked-mine {
+	width: 70px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: black solid;
+	font-size: 10px;
+}
+.marked-mine span {
+	border: black solid;
+	font-size: 10px;
+	padding: 10px;
+}
+.selected {
+	background-color: rgb(157, 157, 157);
+}
+.lives {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 15px;
+	color: black;
+	background-color: rgb(64, 144, 224);
+    border-radius: 5%;
+	padding: 5px;
+	width: 100px;
+	max-width: 100px;
+	height: 25px;
+	max-height: 25px;
+	text-align: center;
+}
+.game-over {
+	background-color: gold;
+	font-size: 26px;
+	display: none;
+}
+.safe-click {
+	padding: 10px;
+	border-radius: 5%;
+	background-color: rgb(64, 144, 224);
+    border:none;
+}
+.safe-click:hover {
+    background-color: rgb(179, 219, 255);
+}
+.hints {
+	padding: 10px;
+	border-radius: 5%;
+	background-color: rgb(64, 144, 224);
+    border:none;
+}
+.hints:hover {
+    background-color: rgb(179, 219, 255);
+}
+.game-status {
+    background-color: rgb(64, 144, 224);
+    padding: 10px;
+    border-radius: 10%;
+    display:none;
+}
+.safe-border {
+	background-color: olivedrab;
+}
+.mines-left {
+	background-color: rgb(64, 144, 224);
+    padding: 10px;
+    border-radius: 10%;
+	display:none;
+}
+.status {
+	text-align: center;
+}
+footer {
+	position: absolute;
+	font-size: 36px;
+	bottom: 0;
+}

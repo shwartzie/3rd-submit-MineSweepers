@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="UI.css" />
+        <title>MineSweeper</title>
+    </head>
+
+    <body onload="init()">
+        <div oncontextmenu=""></div>
+        <div class="scores">
+            Best Scores
+            <div class="easy-score">Easy: <span></span></div>
+            <div class="hard-score">Hard: <span></span></div>
+            <div class="extreme-score">Extreme: <span></span></div>
+        </div>
+        <div class="game-board">
+            <div class="games-functions">
+                <div>
+                    <button class="safe-click" onclick="safeClick()">
+                        Safe Click <span></span>
+                    </button>
+                    <button class="restart-game" onclick="init()">😉</button>
+                    <button class="hints">Hint <span></span></button>
+                </div>
+                <div>
+                    <div class="lives">LIVES LEFT <span></span>
+                    </div>
+                    <span class="timer">
+                        Timer
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="table-container">
+                    <button class="easy-table" onclick="playGame(this)">
+                        Easy
+                    </button>
+                    <button class="hard-table" onclick="playGame(this)">
+                        Hard
+                    </button>
+                    <button class="extreme-table" onclick="playGame(this)">
+                        Extreme!
+                    </button>
+                </div>
+            </div>
+            <table>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+        <div class="status">
+            <div class="mines-left"></div>
+            <div class="game-status"></div>
+        </div>
+        <script src="globalVars.js"></script>
+        <script src="init.js"></script>
+        <script src="utils.js"></script>
+        <script src="mines.js"></script>
+        <script src="status.js"></script>
+        <script src="cells.js"></script>
+        <script src="board.js"></script>
+        <script src="game.js"></script>
+    </body>
+    <footer>By Roni Shwarzman</footer>
+</html>
